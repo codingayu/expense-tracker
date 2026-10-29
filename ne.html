@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Expense Tracker</h1>
+    <h2>Keep Your Wallet Happy</h2>
+
+    <label>Amount: </label>
+    <input type="number" id="amount"
+        placeholder="Enter Amount">
+    <br><br>
+    
+    <label>Category: </label>
+     <select id="category">
+        <option>Food</option>
+        <option>Travel</option>
+        <option>Shopping</option>
+        <option>Bills</option>
+        <option>Education</option>
+        <option>Giving Friends</option>
+        
+
+    </select>
+    
+    <label>Date:</label>
+    <input type="date" id="date">
+    <br><br>
+
+    <br><br> 
+    <ul class="menu">
+        <li>
+            <a href="#0">
+    <button onclick="addExpense()">Add Expence</button>
+    </a>
+    </li>
+    <h2>Expense</h2>
+    <h3>Total: ₹<span id="total">0</span></h3> 
+    
+    <ul id="expenseList"></ul>
+        
+       <script src="script.js"> </script>
+       
+       
+       
+       </div>
+
+</body>
+</html>
